@@ -43,6 +43,7 @@ body {
 
 .logo{
     height: 35px;
+    animation: fadeIn 5s;
 }
 
 .text-box{
@@ -102,6 +103,14 @@ body {
  
     }
 }
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 @keyframes moveInRight {
     0% {
         opacity: 0;
@@ -110,6 +119,23 @@ body {
 
     60%{
         transform: translatex(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+ 
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    60%{
+        transform: translateY(-10px);
     }
 
     100% {
@@ -128,6 +154,8 @@ body {
     padding: 15px 40px;
     border-radius: 100px;
     transition: all .2s;
+    position: relative;
+    
 }
 .btn:hover{
     transform: translateY(-3px);
@@ -140,4 +168,32 @@ body {
 .btn-white {
     background-color: #fff;
     color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after{
+    background-color: #fff;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.2) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
