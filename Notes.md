@@ -1,10 +1,14 @@
-# Three Pillars of Writing Good HTML and CSS
+# Notes
 
-- Responsive Design
-- Maintainable and Scalable Code
-- Web Performance
+## Three Pillars of Writing Good HTML and CSS
 
-## Responsive Design
+---
+
+- **Responsive Design**
+- **Maintainable and Scalable Code**
+- **Web Performance**
+
+### Responsive Design
 
 Creating responsive web pages
 
@@ -14,7 +18,7 @@ Creating responsive web pages
 - Correct units
 - Having a target platform & strategy
 
-## Maintainable and Scalable Code
+### Maintainable and Scalable Code
 
 Most beneficial to the developer
 
@@ -26,7 +30,7 @@ Most beneficial to the developer
 - Naming Conventions
 - Code Structure
 
-## Web Performance
+### Web Performance
 
 Our site needs to run smoothly
 
@@ -36,3 +40,18 @@ Our site needs to run smoothly
 - css preprosessing
 - less images
 - compress images
+
+## The Cascade and Specificity
+
+---
+
+## Component  
+
+---
+
+Atomic Design
+
+Block Element Modifier
+
+7-1 Pattern
+(sass or css preprocesor)
